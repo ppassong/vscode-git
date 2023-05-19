@@ -1,0 +1,47 @@
+body{
+    margin:0
+}
+h1{
+    text-align:center;
+    border-bottom:2px solid rgb(41, 4, 4);
+    margin:0;
+    padding:2px;
+}
+a{
+    text-decoration:none;
+    color:black;
+    margin:auto;
+    text-align:cetner;
+    display:line;
+}
+ol{
+    border-right:1px solid black;
+    margin:0px;
+    width:50px;
+    padding:25px;
+}
+#grid{
+    display:grid;
+    grid-template-columns:160px 1fr;    
+}
+#grid ol{
+    padding-left:40px;
+}
+#article{
+    padding-right:20px;
+    margin:0;
+}
+@media(max-width:600px){
+    ol{
+        border-right:none;
+    }
+    h1{
+        border-bottom:1px solid;
+    }
+    #grid{
+        display:block;
+    }
+    #grid #article{
+        padding-left:20px;
+    }
+}
